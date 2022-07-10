@@ -1,13 +1,180 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  margin :0;
+  background-color: #dddfe1;
+  color:#878282
+}
+.container{
+  display:flex;
+}
+.sidenav{
+  background-color:white;
+  width:15%;
+  height:100vh;
+  position:fixed;
+  text-align:center;
+  box-shadow:4px 0 10px rgba(0,0,0,0.5);
+  z-index:2;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navBar{
+  list-style-type:none;
+  padding:0;
+  margin:0;
+}
+.navBar li{
+  padding:12px;
+  text-align: center;
+
+}
+.navBar li a{
+  text-decoration:none;
+  color:#878282;
+  font-weight: bold;
+  font-family: system-ui;
+}
+.blue{
+  border-left:2px solid navy;
+}
+.navHead{
+    font-weight: bold;
+    font-family: system-ui;
+    font-size:25px;
+    /*border-bottom:1px solid grey;*/
+    box-shadow:0 1px 5px rgba(0,0,0,0.5);
+
+}
+.content{
+  position:relative;
+  left:15vw;
+  top:0;
+  padding:0;
+}
+.navBar li:hover{
+  background-color: #f1f1f1;
+}
+.navBar li:active{
+  border-left:2px solid navy;
+}
+.navBar li a:visited{
+	border-left:12px solid red;
+}
+#header{
+  margin:0;
+  width:100%;
+  background-color:white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+  position:fixed;
+	padding:10px 0;
+  z-index:1;
+}
+#header ul{
+  list-style-type: none;
+	margin:0;
+
+}
+#header ul li{
+  display:inline;
+  padding:10px 20px;
+}
+#header ul li input{
+  border:none;
+  font-size: 15px;
+}
+#head-stat-mini{
+
+  display:flex;
+  margin:0;
+}
+
+#head-stat-mini li{
+  display:inline-block;
+    list-style-type:none;
+    margin:0 4.3vw;
+    border-radius: 10px;
+    padding: 30px 15px;
+      background-color: white;
+
+}
+#head-stat-mini li div{
+  background-color: black;
+  border-radius: 30px;
+
+}
+
+
+#cardhead{
+  /*width:container;
+  text-align:center;*/
+  padding:2px;
+  margin:0;
+  background-color: white;
+  padding:10px;
+  border-bottom: 1px solid grey;
+  font-family:system-ui;
+  font-weight: normal;
+
+}
+#cardhead h2{
+  margin:0;
+  padding:0
+}
+.flag{
+	border-left:2px solid grey;
+	width:30px;
+	font-size:30px;
+	margin-left:55vw;
+}
+.username{
+	font-family:system-ui;
+	color:grey;
+	border-left:2px solid grey;
+	font-size:22px;
+}
+.content{
+  display:grid;
+}
+#dashboard-cons{
+  position:relative;
+  top:3vw;
+  margin:0 20px;
+}
+
+.dashHead{
+  margin:30px 0;
+  width:20vw;
+  font-family:system-ui;
+  color:grey;
+  font-variant: all-small-caps;
+  letter-spacing: 8px;
+  font-size:20px;
+  line-height: 30px;
+}
+.dashHead #I{
+  font-size:40px;
+  color:#322929;
+  font-variant:normal;
+  letter-spacing: normal;
+  font-family: monospace;
+}
+#pie-stat {
+  width:18vw;
+  height:auto;
+  background-color: white;
+
+  margin:auto;
+}
+#stat-main{
+  width:55vw;
+  float:left;
+  margin:40px 10px;
+  background-color:#f1f1f1;
+
+}
+#stat-right{
+  width:25vw;
+  float:right;
+  background-color: white;
+  margin:40px 10px;
+  padding-bottom:55px;
+
 }
